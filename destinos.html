@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JUJUY TURISMO</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="wrapper">
+        <div class="logo">
+          <a href="index.html">
+            <img id="logo-jujuy" src="img/logo-jujuy-turismo.png" alt="Logo Jujuy Turismo">
+          </a>
+        </div>
+        <input type="radio" name="slide" id="menu_btn" />
+        <input type="radio" name="slide" id="cancel_btn" />
+
+        <ul class="nav_links">
+          <label for="cancel_btn" class="btn cancel_btn">
+            <i class="fas fa-times"></i>
+          </label>
+
+          <li>
+            <a href="destinos.html" class="desktop_item">DESTINOS</a>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile_item">DESTINOS</label>
+            <div class="mega_box">
+              <div class="content">
+                <div class="row img_row">
+                  <div class="services_img"></div>
+                </div>
+                <div class="row">
+                  <ul class="mega_links first_links">
+                    <li><a href="destinos.html#id-section-card">Pumamarca</a></li>
+                    <li><a href="destinos.html#id-section-card">Salinas Grandes</a></li>
+                    <li><a href="destinos.html#id-section-card">Humahuaca</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="mega_links">
+                    <li><a href="destinos.html#id-section-table">Precios por Lugar</a></li>
+                    <li><a href="destinos.html#id-galeria">Galeria</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="mega_links">
+                    <li><a href="blog.html">Blog</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="agencias.html">AGENCIAS</a></li>
+          <li><a href="precios.html">PRECIOS</a></li>
+
+          <li><a href="contacto.html" class="btn-reserva">CONTACTO</a></li>
+          <li><button id="zenfit-toggle-mode" aria-label="Cambiar modo" class="zenfit-modo-btn">
+              ☀️
+            </button></li>
+        </ul>
+        <label for="menu_btn" class="btn menu_btn">
+          <i class="fas fa-bars"></i>
+        </label>
+      </div>
+    </nav>
+  </header>
+
+
+  <section id="id-galeria" class="galeria-section efecto-revelar">
+    <h2 class="titulo">DESTINOS EN JUJUY: TU AVENTURA ESPERA</h2>
+    <p class="sub-titulo">Sistema de Filtrado</p>
+
+    <input type="radio" name="filtro" id="todo" checked>
+    <input type="radio" name="filtro" id="cultural">
+    <input type="radio" name="filtro" id="naturaleza">
+    <input type="radio" name="filtro" id="sol">
+    <input type="radio" name="filtro" id="gastro">
+    <input type="radio" name="filtro" id="religioso">
+
+    <div class="filtros">
+      <label for="cultural">CULTURAL</label>
+      <label for="naturaleza">NATURALEZA</label>
+      <label for="sol">SOL Y PLAYA</label>
+      <label for="gastro">GASTRONÓMICO</label>
+      <label for="religioso">RELIGIOSO</label>
+    </div>
+
+    <div class="galeria">
+      <img class="item cultural"
+        src="https://images.unsplash.com/photo-1679951456911-c699e73c9a8f?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Cultural">
+      <img class="item cultural"
+        src="https://images.unsplash.com/photo-1598921919240-c972ce2e58d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Cultural">
+      <img class="item cultural"
+        src="https://media.todojujuy.com/p/28552af48536b24120614065b9203891/adjuntos/227/imagenes/003/130/0003130113/imagepng.png"
+        alt="Cultural">
+      <img class="item cultural"
+        src="https://images.unsplash.com/photo-1598921919359-da5507116b06?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Cultural">
+      <img class="item cultural"
+        src="https://d3b5jqy5xuub7g.cloudfront.net/wp-content/uploads/2025/03/Carnaval-en-Jujuy.png" alt="Cultural">
+      <img class="item cultural"
+        src="https://i0.wp.com/leerdelviaje.com/wp-content/uploads/2022/08/20220830_231514-scaled.jpg?resize=1359%2C2048&ssl=1"
+        alt="Cultural">
+
+      <img class="item naturaleza"
+        src="https://images.unsplash.com/photo-1582080824279-3c2d62bfc6e0?q=80&w=1137&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="naturaleza">
+      <img class="item naturaleza"
+        src="https://images.unsplash.com/photo-1653520299633-a48b43207b69?q=80&w=1164&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="naturaleza">
+      <img class="item naturaleza"
+        src="https://images.unsplash.com/photo-1580835018727-6a6971c2223d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="naturaleza">
+      <img class="item naturaleza"
+        src="https://images.unsplash.com/photo-1657926989832-eb9677f3fb20?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="naturaleza">
+      <img class="item naturaleza"
+        src="https://antiguatilcara.com.ar/image/blog_images/destinos-imperdibles-jujuy-750x350.jpg" alt="naturaleza">
+
+      <img class="item sol"
+        src="https://images.unsplash.com/photo-1584667267515-9cd0084da544?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="sol">
+      <img class="item sol"
+        src="https://images.unsplash.com/photo-1591312445196-1675fef1d959?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="sol">
+      <img class="item sol"
+        src="https://images.unsplash.com/photo-1695834710466-db7d5a9f46d6?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="sol">
+      <img class="item sol"
+        src="https://images.unsplash.com/photo-1695834676599-4fe90e8c949d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="sol">
+
+      <img class="item religioso"
+        src="https://plus.unsplash.com/premium_photo-1689370873865-4fe0a44bc9b8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="religioso">
+      <img class="item religioso" src="https://unjudiario.unju.edu.ar/images/Pesebre.jpg" alt="religioso">
+      <img class="item religioso"
+        src="https://media.todojujuy.com/p/1dceeedfed699016d340eff9297d0756/adjuntos/227/imagenes/001/373/0001373899/virgen-rio-blancojpg.jpg"
+        alt="religioso">
+      <img class="item religioso"
+        src="https://cdnartic.ar/af76jqtoAGbfgzD6UsvB3XDod_w=/1024x0/filters:no_upscale():format(webp):quality(40)/https://lvdsjcdn.eleco.com.ar/Imagenes/Imagee22f7fadc26f40739db2ffe042021432.jpg"
+        alt="religioso">
+      <img class="item religioso" src="https://turismo-hca.com/wp-content/uploads/2022/11/cabildo-historico-1.jpg"
+        alt="religioso">
+
+      <img class="item gastro" src="https://blog.moebiusviajes.com/wp-content/uploads/2021/10/GASTRONOMIA-700-X-420.jpg"
+        alt="gastro">
+      <img class="item gastro"
+        src="https://blog.moebiusviajes.com/wp-content/uploads/2021/10/tortilla-rellena-946-x-568.jpg" alt="gastro">
+      <img class="item gastro" src="https://blog.moebiusviajes.com/wp-content/uploads/2021/10/humita-946-x-568.jpg"
+        alt="gastro">
+      <img class="item gastro" src="https://blog.moebiusviajes.com/wp-content/uploads/2021/10/locro-946-x-568.jpg"
+        alt="gastro">
+
+    </div>
+  </section>
+
+
+  <!-- Tarjetas  -->
+  <section id="id-section-card" class="section-card efecto-revelar">
+    <h2>LUGARES DESTACADOS</h2>
+    <div class="container-card">
+      <div class="cards">
+        <div class="card">
+          <div class="icon">
+            <img
+              src="https://media.todojujuy.com/p/e7bd0b5d13bcb89ac470b484e267f25c/adjuntos/227/imagenes/003/312/0003312011/790x0/smart/salinas-grandesjpg.jpg"
+              alt="Salinas">
+          </div>
+          <div class="title">Salinas Grandes</div>
+          <div class="description">Caminá sobre uno de los salares más grandes del mundo. Un paisaje surrealista donde
+            el cielo se refleja en el suelo, ideal para capturar fotos únicas y sentir la inmensidad del Altiplano
+            jujeño.</div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <img src="https://www.argentina.gob.ar/sites/default/files/purmamarcacnm1.jpg" alt="Pumamarca">
+          </div>
+          <div class="title">Pumamarca</div>
+          <div class="description">Descubrí un pueblo detenido en el tiempo a los pies del cerro más famoso del Norte.
+            Recorré el Paseo de los Colorados y dejate cautivar por su feria artesanal, donde la cultura y la tradición
+            jujeña cobran vida en cada rincón.</div>
+
+        </div>
+        <div class="card">
+          <div class="icon">
+            <img src="https://i0.wp.com/leerdelviaje.com/wp-content/uploads/2022/08/IMG_8030-scaled.jpg?w=2197&ssl=1"
+              alt="Humahuaca">
+          </div>
+          <div class="title">Humahuaca</div>
+          <div class="description">Adentrate en la ciudad que da nombre a la Quebrada y maravillate con el Monumento a
+            la Independencia. Desde aquí podrás alcanzar el Hornocal, el imponente cerro de los 14 colores, mientras te
+            sumergís en las raíces más profundas del Norte Argentino.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="id-section-table" class="section-table efecto-revelar">
+    <div class="table-container">
+      <table>
+        <caption>TABLA DE PRECIOS Y SERVICIOS</caption>
+        <thead>
+          <tr>
+            <th>Destino</th>
+            <th>Categoría</th>
+            <th>Precio (Base/Avanzado)</th>
+            <th>Duración (Días)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Destino">Humahuaca</td>
+            <td data-label="Categoría">Cultural</td>
+            <td data-label="Precio">$30.195 / 42.000</td>
+            <td data-label="Duración">3</td>
+          </tr>
+          <tr>
+            <td data-label="Destino">Salinas Grandes</td>
+            <td data-label="Categoría">Naturaleza</td>
+            <td data-label="Precio">$30.185 / 41.000</td>
+            <td data-label="Duración">2</td>
+          </tr>
+          <tr>
+            <td data-label="Destino">Iruya</td>
+            <td data-label="Categoría">Pormamet</td>
+            <td data-label="Precio">$30.195 / 41.000</td>
+            <td data-label="Duración">2</td>
+          </tr>
+          <tr>
+            <td data-label="Destino">Hornocal</td>
+            <td data-label="Categoría">Gastronómico</td>
+            <td data-label="Precio">$30.400 / 41.000</td>
+            <td data-label="Duración">4</td>
+          </tr>
+          <tr>
+            <td data-label="Destino">Tilcara Pucará</td>
+            <td data-label="Categoría">Cultural</td>
+            <td data-label="Precio">$30.300 / 41.300</td>
+            <td data-label="Duración">4</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="main-content">
+      <div class="left box">
+        <h3>Suscríbete a nuestro Newsletter</h3>
+        <div class="content">
+          <form action="#" class="newsletter-form">
+            <input type="email" placeholder="Email" required>
+            <button type="submit">Enviar</button>
+          </form>
+
+          <h3 class="social-title">Enlaces a redes sociales</h3>
+          <div class="social">
+            <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><span class="fab fa-facebook-f"></span></a>
+            <a href="https://www.instagram.com/?hl=es" target="_blank"><span class="fab fa-instagram"></span></a>
+            <a href="https://x.com/?lang=es" target="_blank"><span class="fab fa-twitter"></span></a>
+            <a href="https://www.youtube.com/" target="_blank"><span class="fab fa-youtube"></span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="center box">
+        <h3>Links</h3>
+        <div class="content">
+          <ul class="footer-links">
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Políticas</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right box">
+        <h3>Mapa interactivo embebido</h3>
+        <div class="content">
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29335.355984855898!2d-65.37155270283667!3d-23.209604208719668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9404e9a4ba40a8c1%3A0x5ff8703d0479ecf9!2sHumahuaca%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1775947113125!5m2!1ses-419!2sar"
+              width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <p>&copy; 2026 Jujuy Turismo - Website</p>
+    </div>
+  </footer>
+
+  <script src="js/zenfit-modo.js"></script>
+</body>
+
+</html>
